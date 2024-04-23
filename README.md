@@ -1,3 +1,4 @@
 # Practica2.1
-Cesar Alberto Villalba Selley CAEZARVS2001
-\nFrancisco Alberto Salinas Ortiz CiscOtz
+<h4>Cesar Alberto Villalba Selley    CAEZARVS2001</h4>
+<h4>Francisco Alberto Salinas Ortiz   CiscOtz</h4>
+

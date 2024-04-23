@@ -18,9 +18,9 @@ app.get('/', (req, res) => {
 // Ruta personalizada ('/info') para devolver un objeto JSON
 app.get('/info', (req, res) => {
     const info = {
-        nombre: "Diego",
-        edad: 20,
-        ciudad: "Tlaxcala"
+        nombre: "Cesar",
+        edad: 22,
+        ciudad: "Apizaco"
     };
     res.json(info);
 });
@@ -43,6 +43,11 @@ app.patch('/', (req, res) => {
 // Ruta DELETE en la raíz ('/') - texto plano
 app.delete('/', (req, res) => {
     res.send('Método DELETE');
+});
+
+// Middleware para manejar errores 404
+app.use((req, res, next) => {
+    res.status(404).send("Página no encontrada :c");
 });
 
 app.listen(port, () => {
